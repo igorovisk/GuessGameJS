@@ -25,9 +25,9 @@ function randomNumberGenerator(min, max) {
 }
 
 //VARIABLES
-let score = 20
+let score = 0
 let chances = 10
-let highscoreCounter = 20
+let highscoreCounter = 0
 
 function guessNumber(randomNumber) {
     message.textContent = 'Start guessing...'
@@ -77,9 +77,9 @@ again.addEventListener('click', event => {
     //variables reset
     chances = 10
     chancesView.textContent = chances
-    score = 20
+    score = 0
     scoreView.textContent = '20'
-    highscoreCounter = 20
+    highscoreCounter = 0
     inputGuess.value = ''
     numberView.textContent = '?'
     message.classList.remove('wrong')
